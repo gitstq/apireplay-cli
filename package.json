@@ -1,0 +1,49 @@
+{
+  "name": "apireplay-cli",
+  "version": "1.0.0",
+  "description": "🎬 APIReplay-CLI - Lightweight Terminal HTTP API Traffic Recording & Intelligent Replay Engine | 轻量级终端HTTP API流量录制与智能回放引擎",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "apireplay": "./dist/index.js",
+    "apr": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "test": "node --test dist/**/*.test.js",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "cli",
+    "tui",
+    "http",
+    "api",
+    "traffic",
+    "recording",
+    "replay",
+    "testing",
+    "mock",
+    "proxy",
+    "zero-dependencies"
+  ],
+  "author": "gitstq",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitstq/APIReplay-CLI.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gitstq/APIReplay-CLI/issues"
+  },
+  "homepage": "https://github.com/gitstq/APIReplay-CLI#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}
